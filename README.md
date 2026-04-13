@@ -1,6 +1,14 @@
 # Tactus Embodied AI Assessment — Diana Vins
 
-## Q2: DTD Texture Classifier
+---
+
+## Q1
+
+Answers: Why is cracking an egg hard for a robot and how to solve it.
+
+---
+
+## Q2
 
 ### Test accuracy (DTD split 1, 47 classes)
 
@@ -32,3 +40,9 @@ TTA = 8-view test-time augmentation (4 rotations × flip). All models evaluated 
 ### Surprising finding
 
 A **frozen** DINOv2 backbone with a single linear layer beats every **fully fine-tuned** CNN by a wide margin (75.6% vs 70.2% for ConvNeXt). This is striking because fine-tuning should give CNNs a significant advantage — yet feature quality matters more than adaptation for texture recognition. DINOv2 was never trained with texture labels; its self-supervised objective on diverse imagery forced it to encode the intrinsic visual structure of patches rather than fitting ImageNet object categories. The result directly demonstrates the shape bias of supervised ImageNet CNNs (Geirhos et al., 2019) — they never learned to care about texture at the representational level, and 95 epochs of fine-tuning on 9k images cannot fully undo that.
+
+---
+
+## Q3
+
+Discusses three recent topics in reinforcement learning/robotics and an idea to implement.
