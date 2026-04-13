@@ -1,0 +1,4 @@
+Pipeline started at Sun Apr 12 10:32:14 PDT 2026. Log: run_all_20260412_103214.log
+
+[1m[36m▶ Step 0: Installing dependencies[0m
+Q2/run_all.sh: line 74: pip: command not found
